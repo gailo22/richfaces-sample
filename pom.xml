@@ -12,28 +12,53 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <richfaces.version>4.3.1.Final</richfaces.version>
+        <myfaces.version>2.1.8</myfaces.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.richfaces.core</groupId>
             <artifactId>richfaces-core-api</artifactId>
-            <version>4.3.1.Final</version>
+            <version>${richfaces.version}</version>
         </dependency>
         <dependency>
             <groupId>org.richfaces.core</groupId>
             <artifactId>richfaces-core-impl</artifactId>
-            <version>4.3.1.Final</version>
+            <version>${richfaces.version}</version>
         </dependency>
         <dependency>
             <groupId>org.richfaces.ui</groupId>
             <artifactId>richfaces-components-api</artifactId>
-            <version>4.3.1.Final</version>
+            <version>${richfaces.version}</version>
         </dependency>
         <dependency>
             <groupId>org.richfaces.ui</groupId>
             <artifactId>richfaces-components-ui</artifactId>
-            <version>4.3.1.Final</version>
+            <version>${richfaces.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-api</artifactId>
+            <version>${myfaces.version}</version>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.apache.myfaces.core</groupId>
+			<artifactId>myfaces-bundle</artifactId>
+            <version>${myfaces.version}</version>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.apache.myfaces.core.internal</groupId>
+			<artifactId>myfaces-shaded-impl</artifactId>
+            <version>${myfaces.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-impl</artifactId>
+            <version>${myfaces.version}</version>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
